@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 0.5rem;
+  background-color: #dfdfdf; }
+
+::selection {
+  background-color: #C82A23;
+  color: #fff; }
+
+.phoneContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 812px;
+  max-height: 812px; }
+  .phoneContainer .phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: auto;
+    margin-top: 30px;
+    width: 23.5rem;
+    max-width: 23rem;
+    border-radius: 0.52rem;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    .phoneContainer .phone.withBg {
+      background-image: url("/img/Home.jpg");
+      background-position: center;
+      background-size: cover; }
+    .phoneContainer .phone.textBg {
+      background-image: url("/img/Select Method.png");
+      background-repeat: no-repeat;
+      background-position-y: 62%; }
+    .phoneContainer .phone.noJustify {
+      justify-content: unset !important; }
+    .phoneContainer .phone .phoneTopBar .iPhoneHeader img {
+      width: 100%; }
+    .phoneContainer .phone .phoneTopBar .backButton {
+      width: 100%;
+      display: flex;
+      justify-content: end; }
+      .phoneContainer .phone .phoneTopBar .backButton.withLogo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .phoneContainer .phone .phoneTopBar .backButton.withLogo .logo {
+          padding: 0 15px !important; }
+      .phoneContainer .phone .phoneTopBar .backButton a {
+        padding: 15px;
+        box-sizing: border-box;
+        cursor: pointer; }
+    .phoneContainer .phone .phoneCenter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 144px; }
+      .phoneContainer .phone .phoneCenter h1 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 500; }
+      .phoneContainer .phone .phoneCenter span {
+        display: flex;
+        flex-direction: column;
+        text-align: center; }
+        .phoneContainer .phone .phoneCenter span a {
+          background-color: #C82A23;
+          padding: 10px 39px;
+          border-radius: 0.52rem;
+          box-sizing: border-box;
+          color: #fff;
+          font-size: 20px;
+          cursor: pointer; }
+          .phoneContainer .phone .phoneCenter span a:hover {
+            transition: all 0.2s ease-in;
+            background-color: #871c18;
+            animation: bounce 1s ease; }
+          .phoneContainer .phone .phoneCenter span a:first-of-type {
+            margin-top: 10px; }
+          .phoneContainer .phone .phoneCenter span a:last-of-type {
+            margin-top: 15px; }
+    .phoneContainer .phone .phoneBottom {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-top: 38px; }
+      .phoneContainer .phone .phoneBottom span {
+        width: 65%; }
+        .phoneContainer .phone .phoneBottom span h4 {
+          margin: 0;
+          text-transform: uppercase;
+          font-weight: 300;
+          color: #fff;
+          font-size: 16px; }
+        .phoneContainer .phone .phoneBottom span p {
+          color: #fff;
+          margin: 0;
+          font-weight: 300;
+          letter-spacing: 0.5px; }
+    .phoneContainer .phone .phoneHeader {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 50px;
+      box-sizing: border-box; }
+      .phoneContainer .phone .phoneHeader img {
+        width: 200px;
+        height: 109px; }
+    .phoneContainer .phone .phoneFooter {
+      display: inline-flex;
+      justify-content: center;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box; }
+      .phoneContainer .phone .phoneFooter span {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly; }
+        .phoneContainer .phone .phoneFooter span a {
+          margin: 10px;
+          cursor: pointer; }
+          .phoneContainer .phone .phoneFooter span a:hover {
+            animation: bounce 1s ease; }
+    .phoneContainer .phone .categoryContainer {
+      width: 100%;
+      overflow: hidden;
+      padding: 10px;
+      box-sizing: border-box; }
+      .phoneContainer .phone .categoryContainer .categoryInner {
+        position: relative;
+        display: inline-block;
+        padding: 10px;
+        box-sizing: border-box; }
+        .phoneContainer .phone .categoryContainer .categoryInner .categoryBox {
+          background-color: #C82A23;
+          color: #fff;
+          padding: 7px 20px;
+          border-radius: 0.3rem;
+          margin: 0 5px;
+          box-sizing: border-box;
+          font-size: 15px;
+          cursor: pointer; }
+          .phoneContainer .phone .categoryContainer .categoryInner .categoryBox:hover {
+            background-color: #871c18;
+            transition: all 0.2s ease-in; }
+          .phoneContainer .phone .categoryContainer .categoryInner .categoryBox.blueBg:hover {
+            background-color: #182755 !important; }
+    .phoneContainer .phone .itemContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      box-sizing: border-box; }
+      .phoneContainer .phone .itemContainer h3 {
+        font-weight: 600;
+        font-size: 20px;
+        margin: 5px 0; }
+      .phoneContainer .phone .itemContainer .item {
+        background-color: #fff;
+        display: flex;
+        align-items: stretch;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 0.3rem;
+        margin: 5px 0;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px; }
+        .phoneContainer .phone .itemContainer .item .withImageCont {
+          display: inline-flex;
+          flex-direction: row; }
+          .phoneContainer .phone .itemContainer .item .withImageCont .image {
+            background-color: #D9D9D9;
+            padding: 50px;
+            box-sizing: border-box;
+            border-radius: 0.52rem; }
+          .phoneContainer .phone .itemContainer .item .withImageCont .content {
+            display: inline-flex;
+            flex-direction: column; }
+            .phoneContainer .phone .itemContainer .item .withImageCont .content span {
+              margin-left: 10px; }
+              .phoneContainer .phone .itemContainer .item .withImageCont .content span h3 {
+                margin: 0; }
+              .phoneContainer .phone .itemContainer .item .withImageCont .content span p {
+                margin: 0; }
+              .phoneContainer .phone .itemContainer .item .withImageCont .content span:last-of-type {
+                display: flex;
+                justify-content: end;
+                margin-top: 10px; }
+                .phoneContainer .phone .itemContainer .item .withImageCont .content span:last-of-type p {
+                  font-weight: 500;
+                  margin-right: 10px; }
+                .phoneContainer .phone .itemContainer .item .withImageCont .content span:last-of-type a {
+                  background-color: #294391;
+                  padding: 3px 12px;
+                  box-sizing: border-box;
+                  color: #fff;
+                  cursor: pointer;
+                  border-radius: 0.3rem;
+                  font-size: 12px; }
+                  .phoneContainer .phone .itemContainer .item .withImageCont .content span:last-of-type a:hover {
+                    background-color: #182755;
+                    transition: all 0.2s ease-in; }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-10px); }
+  60% {
+    transform: translateY(-5px); } }
+.splide__slide {
+  width: unset !important; }
+
+.splide__arrows--ltr {
+  display: none !important; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jost', sans-serif; }
+  body a {
+    text-decoration: none;
+    color: inherit; }
+
+.outerContainer {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto; }
+  .outerContainer .innerContainer {
+    width: 95%;
+    max-width: 1300px;
+    position: relative;
+    margin: 0 auto; }
+
+.blueBg {
+  background-color: #294391 !important; }
+
+.categoryWhiteBg {
+  background-color: #F5F5F5 !important; }
+
+/*# sourceMappingURL=main.css.map */

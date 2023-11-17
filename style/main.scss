@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$white: #fff;
+$offWhite: #D9D9D9;
+$categoryWhite: #F5F5F5;
+$black: #000;
+$blue: #294391;
+$red: #C82A23;
+
+@import 'partials/index.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.outerContainer {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    .innerContainer {
+        width: 95%;
+        max-width: 1300px;
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+.blueBg {
+    background-color: $blue !important;
+}
+
+.categoryWhiteBg {
+    background-color: $categoryWhite !important;
+}
